@@ -1,13 +1,10 @@
 
 import { IsInt, IsNumber, IsNotEmpty, IsLatitude, IsLongitude } from 'class-validator';
 
-export class ClockInDto {
+export class CreateClockInDto {
   @IsInt()
   @IsNotEmpty()
   workerId: number;
-
-  @IsNotEmpty()
-  timestamp: number;
 
   @IsNumber()
   @IsLatitude()
